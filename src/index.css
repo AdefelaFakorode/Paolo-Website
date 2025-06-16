@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Optional debug border */
+/* * {
+  border: 1px solid red;
+} */
+
+/* Custom float animation (always active) */
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, .6, 1) infinite;
+  }
+
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Theme variables */
+@theme {
+  --font-gothic: 'SpecialGothicExpanded', sans-serif;
+  --font-book-antiqua: 'Book Antiqua', Palatino, serif;
+
+  --color-Grey: #383838;
+  --color-Light: #E3E3DE;
+  --color-DarkBrown: #27201B;
+  --color-LightBrown: #D4C3B8;
+
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
