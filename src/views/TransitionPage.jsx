@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ls from "../assets/images/ls.png";
 function TransitionPage() {
   const slideUp = {
     initial: {

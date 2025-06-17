@@ -12,24 +12,22 @@ import {
   faSoundcloud,
 } from "@fortawesome/free-brands-svg-icons";
 import ParticlesComponent from "../components/particles";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 
 function Landing() {
-  const socials = [
-    {
-      icon: faSpotify,
-      url: "https://open.spotify.com/artist/1ULQXHxii8790fXADzSAly",
-    },
-    { icon: faTwitch, url: "https://www.twitch.tv/justpaolostar" },
-    { icon: faXTwitter, url: "https://x.com/justpaolostar" },
-    { icon: faInstagram, url: "https://www.instagram.com/justpaolostar" },
-    { icon: faTiktok, url: "https://www.tiktok.com/@justpaolostar" },
-    { icon: faYoutube, url: "https://www.youtube.com/@justpaolostar" },
-    {
-      icon: faItunesNote,
-      url: "https://music.apple.com/us/artist/nice-boy-paolo/1503382900",
-    },
-    { icon: faSoundcloud, url: "https://soundcloud.com/niceboypaolo" },
-  ];
+const socials = [
+  { icon: faSpotify, url: "https://open.spotify.com/artist/1ULQXHxii8790fXADzSAly" },
+  { icon: faTwitch, url: "https://www.twitch.tv/justpaolostar" },
+  { icon: faXTwitter, url: "https://x.com/justpaolostar" },
+  { icon: faInstagram, url: "https://www.instagram.com/justpaolostar" },
+  { icon: faEnvelope, url: "mailto:niceboybiz@gmail.com" }, // ← fix here
+  { icon: faTiktok, url: "https://www.tiktok.com/@justpaolostar" },
+  { icon: faYoutube, url: "https://www.youtube.com/@justpaolostar" },
+  { icon: faItunesNote, url: "https://music.apple.com/us/artist/nice-boy-paolo/1503382900" },
+  { icon: faSoundcloud, url: "https://soundcloud.com/niceboypaolo" },
+];
+
   return (
 <div className="flex flex-col justify-center items-center min-h-screen relative overflow-hidden select-none">
   {/* Add this wrapper with absolute fill + z-index */}

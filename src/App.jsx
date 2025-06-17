@@ -1,11 +1,11 @@
 import About from "./views/About"
 import Brands from "./views/Brands"
 import Landing from "./views/Landing"
+import Footer from "./views/Footer";
+import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 
 import {useEffect, useState} from "react"
-import { BrowserRouter } from "react-router-dom";
-import AnimatedRoutes from "./components/AnimatedRoutes";
 import TransitionPage from "./views/TransitionPage"; // My PreLoader
 import { AnimatePresence } from "framer-motion";
 
@@ -24,7 +24,7 @@ function App() {
   }, []);
 
 return (
-    <div className="relative">
+    <div className="main">
       <AnimatePresence mode="wait">
         {isLoading && <TransitionPage key="transition" />}
       </AnimatePresence>
@@ -35,6 +35,8 @@ return (
           <section id="home"><Landing /></section>
           <section id="about"><About /></section>
           <section id="brands"><Brands /></section>
+          <section id="contact"><Contact /></section>
+          <section id="footer"><Footer /></section>
         </>
       )}
     </div>

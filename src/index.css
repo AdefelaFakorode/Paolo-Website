@@ -1,11 +1,18 @@
 @import "tailwindcss";
 
-/* Optional debug border */
 /* * {
   border: 1px solid red;
 } */
 
 /* Custom float animation (always active) */
+
+@font-face {
+  font-family: 'SpecialGothicExpanded';
+  src: url('./fonts/SpecialGothicExpanded.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities {
   .animate-float {
     animation: float 3s ease-in-out infinite;
@@ -26,6 +33,10 @@
   }
 }
 
+body {
+  font-family: 'SpecialGothicExpanded', sans-serif;
+}
+
 /* Theme variables */
 @theme {
   --font-gothic: 'SpecialGothicExpanded', sans-serif;
@@ -41,4 +52,5 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 2560px;
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import Company from "../components/Company";
 import Archero2 from "../assets/images/Archero2.png";
 import MarvelRivals from "../assets/images/MarvelRivals.png";
@@ -45,13 +44,13 @@ function Brands() {
     },
   ];
   return (
-    <div className="w-full min-h-screen bg-Light flex flex-col items-center px-4 py-10">
+    <div className="w-full min-h-screen bg-Light flex flex-col items-center px-4 py-10 ">
       
       
 
-<div className="text-center mb-8 md:space-y-2">
+<div className="text-center space-y-2 mb-8 md:space-y-2">
         <h1 className="text-5xl md:text-7xl font-extrabold text-Grey">BRANDS</h1>
-        <p className="text-[#505050] text-sm md:text-xl">
+        <p className="text-[#505050] font-semibold text-sm md:text-xl">
           Explore recent brands I collaborated with.
         </p>
         {/* <p className="text-xs text-black mt-1 md:text-xl">
