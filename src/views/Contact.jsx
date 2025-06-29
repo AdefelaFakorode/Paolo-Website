@@ -17,7 +17,7 @@ function Contact() {
       <Map size={40} />
       <div>
         <span className="text-[16px]">Location</span>
-        <p className="text-[14px]">New York, NY</p>
+        <p className="text-[14px]">New York–New Jersey Metro Area</p>
       </div>
     </div>
   </div>
