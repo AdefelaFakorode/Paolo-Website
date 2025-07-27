@@ -31,7 +31,7 @@ return (
 
       {!isLoading && (
         <>
-          <Navbar />
+          <section id="navbar"><Navbar /></section>
           <section id="home"><Landing /></section>
           <section id="about"><About /></section>
           <section id="brands"><Brands /></section>
